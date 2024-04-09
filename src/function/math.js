@@ -1,22 +1,11 @@
-function add(x, y) {
-  return x + y
-}
-
-function sub(x, y) {
-  return x - y
-}
-
-function mul(x, y) {
-  return x * y
-}
-
-function div(x, y) {
-  return x / y
-}
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+const mul = (x, y) => x * y;
+const div = (x, y) => x / y;
 
 module.exports = {
   add,
   sub,
   mul,
-  div
+  div,
 };

@@ -10,5 +10,9 @@
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "rules": {}
+  "rules": {
+    // "semi": "off",
+    "no-undef": "off",
+    "comma-dangle": "off"
+  }
 }

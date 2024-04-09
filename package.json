@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server/app.js",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix"
   },
   "keywords": [],
   "author": "",

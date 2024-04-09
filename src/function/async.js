@@ -1,18 +1,19 @@
+/* eslint-disable prefer-promise-reject-errors */
 function fetchData(isSuccess) {
-  return new Promise((resolve, rejects) => {
-    if (isSuccess) {
-      return resolve('peanut butter')
+  return new Promise((resolve, reject) => {
+    if (!isSuccess) {
+      reject('error messages');
     }
 
-    return rejects('error messages')
-  })
+    resolve('peanut butter');
+  });
 }
 
 function fetchDataWithCallback(cb) {
-  cb(null, 'peanut butter')
+  cb(null, 'peanut butter');
 }
 
 module.exports = {
   fetchData,
-  fetchDataWithCallback
-}
+  fetchDataWithCallback,
+};

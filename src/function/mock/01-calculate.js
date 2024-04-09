@@ -1,8 +1,8 @@
-const { add } = require("../math")
+const math = require('../math');
 
 function doubleSum(x, y) {
-  const sum = add(x, y)
-  return x + y + sum
+  const sum = math.add(x, y);
+  return x + y + sum;
 }
 
-module.exports = { doubleSum }
+module.exports = { doubleSum };
