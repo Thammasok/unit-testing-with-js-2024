@@ -1,8 +1,17 @@
-const math = require('../math');
+// const math = require('../math');
 
 function doubleSum(x, y) {
-  const sum = math.add(x, y);
+  // use add in math.js
+  // const sum = math.add(x, y);
+
+  // use add in 01-calculate.js
+  // const sum = this.add(x, y);
   return x + y + sum;
 }
 
-module.exports = { doubleSum };
+// use spy self test
+// function add(x, y) {
+//   return x + y;
+// }
+
+module.exports = { doubleSum, add };
