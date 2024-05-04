@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 describe('number', () => {
   test('two plus two', () => {
     const value = 2 + 2;
@@ -9,6 +10,13 @@ describe('number', () => {
     // toBe and toEqual are equivalent for numbers
     expect(value).toBe(4);
     expect(value).toEqual(4);
+
+    // toBe: ใช้สำหรับเปรียบเทียบการอ้างอิงของวัตถุโดยตรง เหมาะสำหรับการตรวจสอบว่าวัตถุสองตัวเป็นวัตถุเดียวกันในหน่วยความจำ
+    // toEqual: ใช้สำหรับเปรียบเทียบค่าของวัตถุโดยละเอียด เหมาะสำหรับการตรวจสอบว่าวัตถุสองตัวมีค่าเหมือนกัน
+    // const a = { name: 'John', age: 30 };
+    // const b = { name: 'John', age: 30 };
+    // expect(a).toBe(b); // ผิดพลาด เพราะว่า a และ b เป็นวัตถุที่แยกต่างหาก
+    // expect(a).toEqual(b); // ถูกต้อง เพราะว่า a และ b มีค่าเหมือนกัน
   });
 
   test('adding floating point numbers', () => {

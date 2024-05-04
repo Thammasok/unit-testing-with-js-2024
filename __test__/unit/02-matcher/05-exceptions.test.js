@@ -13,7 +13,7 @@ describe('exceptions', () => {
     expect(() => compileAndroidCode()).toThrow(/JDK/);
 
     // Or you can match an exact error message using a regexp like below
-    // expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK$/) // Test fails
+    // expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK$/); // Test fails
     expect(() => compileAndroidCode()).toThrow(
       /^you are using the wrong JDK!$/,
     ); // Test pass
