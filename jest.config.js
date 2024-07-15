@@ -15,7 +15,7 @@ const config = {
 
   // Configuration coverage
   collectCoverage: true,
-  coverageDirectory: 'coverage',
+  coverageDirectory: './test-results/coverage',
   coverageReporters: ['text', 'lcov'],
 };
 
