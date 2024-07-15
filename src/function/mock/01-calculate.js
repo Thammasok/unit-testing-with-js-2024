@@ -7,5 +7,4 @@ function doubleSum(x, y) {
   return x + y + sum;
 }
 
-// module.exports = { doubleSum, add };
 module.exports = { doubleSum };
