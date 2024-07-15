@@ -10,7 +10,7 @@ describe('mock', () => {
   });
 
   // 1. Normal without mock
-  it('Should be index from keyword without mock', () => {
+  test('Should be index from keyword without mock', () => {
     const keyword = 'barney';
 
     const actual = getUserByUserName(keyword);
@@ -23,7 +23,7 @@ describe('mock', () => {
   });
 
   // 2. With mock
-  it('Should be index from keyword with mock', () => {
+  test('Should be index from keyword with mock', () => {
     const keyword = 'barney';
 
     // Mock lodash

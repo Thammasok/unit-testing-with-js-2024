@@ -6,7 +6,7 @@ describe('Spy self', () => {
     jest.restoreAllMocks();
   });
 
-  it('Should be called add when call doubleSum', () => {
+  test('Should be called add when call doubleSum', () => {
     const x = 2;
     const y = 2;
 

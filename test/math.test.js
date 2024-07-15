@@ -1,7 +1,7 @@
 const { add } = require('../src/function/math');
 
 describe('Math function', () => {
-  it('should add 5 by 3', () => {
+  test('should add 5 by 3', () => {
     // Arrange
 
     // Action

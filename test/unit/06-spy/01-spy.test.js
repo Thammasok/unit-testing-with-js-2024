@@ -7,7 +7,7 @@ describe('Spy', () => {
     jest.restoreAllMocks();
   });
 
-  it('Should be called add when call doubleSum', () => {
+  test('Should be called add when call doubleSum', () => {
     const x = 2;
     const y = 2;
 
@@ -18,7 +18,7 @@ describe('Spy', () => {
     expect(mathAddSpy).toHaveBeenCalledTimes(1);
   });
 
-  it('Should be return 9 when call doubleSum and send 2, 2', () => {
+  test('Should be return 9 when call doubleSum and send 2, 2', () => {
     const x = 2;
     const y = 2;
     const actual = 104;

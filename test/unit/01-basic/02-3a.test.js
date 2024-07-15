@@ -1,6 +1,6 @@
 const { add } = require('../../../src/function/math');
 
-it('message', () => {
+test('message', () => {
   // Arrange
   const num1 = 5;
   const num2 = 3;

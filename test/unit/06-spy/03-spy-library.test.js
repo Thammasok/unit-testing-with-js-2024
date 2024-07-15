@@ -2,7 +2,7 @@ const _ = require('lodash');
 const { getUserByUserName } = require('../../../src/function/mock/02-user');
 
 describe('Spy library', () => {
-  it('Should be called from findIndex with spy', () => {
+  test('Should be called from findIndex with spy', () => {
     const keyword = 'barney';
 
     const findIndexSpy = jest.spyOn(_, 'findIndex').mockReturnValue(2);
@@ -12,7 +12,7 @@ describe('Spy library', () => {
     expect(findIndexSpy).toHaveBeenCalled();
   });
 
-  it('Should be return user info from keyword with spy', () => {
+  test('Should be return user info from keyword with spy', () => {
     const keyword = 'barney';
 
     jest.spyOn(_, 'findIndex').mockReturnValue(2);

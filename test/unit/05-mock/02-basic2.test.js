@@ -5,7 +5,7 @@ const math = require('../../../src/function/math');
 jest.mock('../../../src/function/math');
 
 describe('Basic Mock solution 2', () => {
-  it('should return 20 when call doubleSum and send 1 and 2', () => {
+  test('should return 20 when call doubleSum and send 1 and 2', () => {
     // Arrange
     const numberOne = 1;
     const numberTwo = 2;
@@ -21,7 +21,7 @@ describe('Basic Mock solution 2', () => {
     expect(total).toBe(expected);
   });
 
-  it('should return 110 when call doubleSum and send 1 and 2', () => {
+  test('should return 110 when call doubleSum and send 1 and 2', () => {
     // Arrange
     const numberOne = 99;
     const numberTwo = 1;
