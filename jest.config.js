@@ -4,6 +4,7 @@
 const config = {
   verbose: true,
   // reporters: ['default', 'jest-junit'],
+  // Configuration options for Jest-Junit
   reporters: [
     'default',
     ['jest-junit', {
@@ -11,6 +12,11 @@ const config = {
       outputName: 'results.xml',
     }],
   ],
+
+  // Configuration coverage
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov'],
 };
 
 module.exports = config;
