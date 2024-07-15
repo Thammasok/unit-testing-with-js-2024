@@ -1,5 +1,6 @@
 const { add } = require('../../../src/function/math');
 
+// 3A: Arrange, Act and Assert Pattern
 test('message', () => {
   // Arrange
   const num1 = 5;
