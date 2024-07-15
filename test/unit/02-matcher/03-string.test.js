@@ -1,6 +1,10 @@
 // 3. Strings
 describe('strings', () => {
   test('but there is a "stop" in Christoph', () => {
+    expect('Christoph').toContain('stop');
+  });
+
+  test('but there is a "stop" in Christoph', () => {
     expect('Christoph').toMatch(/stop/);
   });
 
