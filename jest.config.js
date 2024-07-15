@@ -3,8 +3,8 @@
 /** @type {import('jest').Config} */
 const config = {
   verbose: true,
-  // reporters: ['default', 'jest-junit'],
   // Configuration options for Jest-Junit
+  // reporters: ['default', 'jest-junit'],
   reporters: [
     'default',
     ['jest-junit', {

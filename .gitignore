@@ -131,4 +131,4 @@ dist
 
 data*
 data/*
-test-results/jest/results.xml
+test-results*
