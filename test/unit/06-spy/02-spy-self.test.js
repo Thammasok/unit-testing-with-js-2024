@@ -1,4 +1,4 @@
-const calculate = require('../../../src/function/mock/01-calculate');
+const calculate = require('../../../src/function/mock/03-calculate-for-spy');
 
 describe('Spy self', () => {
   afterEach(() => {

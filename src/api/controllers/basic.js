@@ -1,5 +1,9 @@
+const { getSubscribers } = require('../repositories/transaction');
+
 const getUser = (req, res) => {
-  res.send('Got a POST request');
+  const data = getSubscribers(req, res);
+
+  res.status(200).json(data);
 };
 
 module.exports = {
